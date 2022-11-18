@@ -97,15 +97,120 @@
     <!-- =============================================== -->
     <!-- =========== Markup for Masonery layout ======== -->
     <!-- =============================================== -->
-    <div class="grid-layout">
-      <img class="grid-item grid-item-1" src="./img/coronavirus_landing_page.png" />
-      <img class="grid-item grid-item-2" src="./img/corona_virus_graph.png" />
-      <img class="grid-item span-3 grid-item-3" src="./img/gallery_page.jpg">
-      <img class="grid-item grid-item-4" src="./img/nasaplanets.png">
-      <img class="grid-item span-2 grid-item-5" src="./img/modest_mouse_page.jpg">
-      <img class="grid-item grid-item-6" src="./img/movie_scoop_landing.jpg">
-      <img class="grid-item grid-item-7" src="./img/nasaplanetsII.png">
+    <div class="grid-layout" id="portfolio">
+      <figure>
+        <img src="./img/coronavirus_landing_page.png" />
+        <figcaption>
+          <a href="#">Corona Virus Status Site</a>
+        </figcaption>
+      </figure>
+      <figure class="landscape">
+        <img src="./img/corona_virus_graph.png" />
+
+        <figcaption>
+          <a href="#">Corona Virus Status Site</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./img/gallery_page.jpg">
+
+        <figcaption>
+          <a href="#">Simple gallery</a>
+        </figcaption>
+      </figure>
+      <figure> 
+        <img src="./img/nasaplanets.png">
+
+        <figcaption>
+          <a href="#">NASA Image Gallery</a>
+        </figcaption>
+      </figure>
+      <figure class="landscape">
+        <img src="./img/modest_mouse_page.jpg">
+
+        <figcaption>
+          <a href="#">Modest Mouse Landing Page</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./img/chart_img.png" alt="Chart Web Site">
+
+        <figcaption>
+          <a href="#">Chart Maker Site6</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./img/movie_scoop_landing.jpg">
+
+        <figcaption>
+          <a href="#">Movie Fandom Site</a>
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="./img/black_panther_page.jpg" alt="Black Panther Movie">
+
+        <figcaption>
+          <a href="#">Movie results</a>
+        </figcaption>
+      </figure>
+
+      <figure class="landscape"> 
+        <img src="./img/sports_scores.jpg">
+
+        <figcaption>
+          <a href="#">Sports Scores</a>
+        </figcaption>
+      </figure>
+
+
+      <figure class="landscape"> 
+        <img src="./img/nasaplanetsII.png">
+
+        <figcaption>
+          <a href="#">NASA image query</a>
+        </figcaption>
+      </figure>
+      <figure> 
+        <img src="./img/tt_search.jpg" alt="Inventory CMS Site">
+
+        <figcaption>
+          <a href="#">Drupal CMS</a>
+        </figcaption>
+      </figure>
     </div>
+
+    <hr class="hr_style" />
+    <!-- ========== Form Submit =================== -->
+    <section role="region" id="contact-area">
+      <h3>Contact Info</h3>
+      <div class="row">
+        <div class="col-4">
+          <form action="send_mail.php" method="post">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name" placeholder="From" required />
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" id="Email" placeholder="john@example.com" required />
+
+            <label for="Subject">Subject:</label>
+            <input type="text" name="Subject" id="Subject" required />
+
+            <label id="label_message" for="Message">Message:</label>
+            <textarea name="Message" id="Message" placeholder="Message Here" required></textarea>
+
+            <input type="submit" name="submit" value="Submit" class="submit-button" />
+          </form>
+        </div>
+        <div class="col-8">
+          <p id="contact_me">
+            If you would like to contact me please fill out the form and
+            submit. I would love to hear from you. Also if you are
+            interested in hiring me or if you have any Web Development
+            questions feel free to contact me.
+          </p>
+        </div>
+      </div>
+    </section>
 
   </main>
 
